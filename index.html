@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shehroz Khan |  Independent Web and Digital Developer </title>
-    <meta 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Shehroz - Independent Web and Digital Developer</title>
+    <meta
       name="description"
       content="Freelance Web and Digital Developer innovator."
-      />
+    />
+    <link rel="preload" href="./assets/img/hero-image.jpg" as="image">
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-36RFJ9HRK5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <link rel="stylesheet" href="assets/css/global.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-36RFJ9HRK5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-36RFJ9HRK5');
-</script>
+      gtag("config", "G-36RFJ9HRK5");
+    </script>
   </head>
 
   <body>
     <!--navigation menu with logo and navbar-->
-    <nav></nav>
+    <nav class="theme-light">
+      <div class="container-menu">
+        <a href="../index.html" class="brand">
+          <img
+            src="assets/img/logo.png"
+            alt="Shehroz Khan"
+        /></a>
+
+        <div class="container-menu-links">
+          <div class="nav-toggle" id="nav-toggle-btn">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </div>
+          <ul class="links-wrapper">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portfolio/index.html">Portfolio</a></li>
+            <li><a href="/store/index.html">Store</a></li>
+            <li>
+              <a
+                class="btn btn-solid btn-soft"
+                id="btn-cta"
+                href="/contact/index.html"
+                ><span>Contact</span> <i class="fa-regular fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!--hero container-->
     <header>
       <h1>Hi, I'm Shehroz Khan</h1>
@@ -36,10 +84,7 @@
       <p>
         I created this website to showcase some of my recent web design work.
       </p>
-      <img
-        src="exercises/assets/img/rickroll.jpg"
-        alt="web Designer"
-      />
+      <img class="profile" src="exercises/assets/img/rickroll.jpg" alt="web Designer" />
       <h3>Sample Web Pages</h3>
       <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
       <p><a href="exercises/page-2.html">Purple Rain</a></p>
@@ -50,16 +95,63 @@
       <p><a href="exercises/page-7.html">Software Analytics</a></p>
       <p><a href="exercises/page-8.html">The Box Model</a></p>
       <p><a href="exercises/page-9.html">Web Page With Panels</a></p>
-      <p><a href="exercises/flexbox-sample.html">Responsive grid of rows and columns</a></p>
-      <p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
-      <p><a href="exercises/hero-image.html">Hero block with background image</a></p> 
-      <p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
+      <p>
+        <a href="exercises/flexbox-sample.html"
+          >Responsive grid of rows and columns</a
+        >
+      </p>
+      <p>
+        <a href="exercises/hero-text.html">Hero block with animated text</a>
+      </p>
+      <p>
+        <a href="exercises/hero-image.html">Hero block with background image</a>
+      </p>
+      <p>
+        <a href="exercises/hero-video.html">Hero block with background video</a>
+      </p>
     </main>
-    <!--links to related pages, legal and copyright-->
-    <footer></footer>
+        <!-- footer -->
+ 
+	<footer class="theme-dark text-center-desktop text-center-mobile">
 
-     
-</body>
+		<h2>Shehroz Khan</h2>
 
-</html> 
+		<h3>Front-end designer and developer</h3>
 
+		<ul class="footer-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="./portfolio/index.html">Portfolio</a></li>
+			<li><a href="./store/index.html">Store</a></li>
+            <li><a href="./contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href='/frontend/projects-ui/project-home-checklist/resources/privacy'>Privacy &amp; Legal</a></p>
+
+	</footer>
+
+  	  <!-- JavaScript for Cookie Consent Popup Message -->
+      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        },
+        "content": {
+          "href": "shehrozkhan.github.io/privacy.html"
+        }
+      });
+      </script>
+
+  </body>
+</html>
+>>>>>>> c522a46 (first commit)
